@@ -1,0 +1,86 @@
+INSERT INTO FilmTurleri (TurID,TurAdi) VALUES
+(1, 'Aksiyon'),
+(2, 'Komedi'),
+(3, 'Drama'),
+(4, 'Bilim Kurgu'),
+(5, 'Korku'),
+(6, 'Macera'),
+(7, 'Romantik'),
+(8, 'Belgesel'),
+(9, 'Suç'),
+(10, 'Gerilim');
+
+INSERT INTO Filmler (FilmID, FilmAdi, Yonetmen, Yil, IMDBPuan, TurID) VALUES
+(1, 'Matrix', 'Lana Wachowski', 1999, 8.7, 4),
+(2, 'Titanic', 'James Cameron', 1997, 7.8, 6),
+(3, 'The Shawshank Redemption', 'Frank Darabont', 1994, 9.3, 3),
+(4, 'The Dark Knight', 'Christopher Nolan', 2008, 9.0, 1),
+(5, 'Inception', 'Christopher Nolan', 2010, 8.8, 4),
+(6, 'Pulp Fiction', 'Quentin Tarantino', 1994, 8.9, 9),
+(7, 'The Godfather', 'Francis Ford Coppola', 1972, 9.2, 9),
+(8, 'Interstellar', 'Christopher Nolan', 2014, 8.6, 4),
+(9, 'Fight Club', 'David Fincher', 1999, 8.8, 10),
+(10,'Forrest Gump', 'Robert Zemeckis', 1994, 8.8, 3);
+
+INSERT INTO Oyuncular (OyuncuID,OyuncuAdi, DogumTarihi, Ulke) VALUES
+(1, 'Keanu Reeves', '1964-09-02', 'Amerika'),
+(2, 'Leonardo DiCaprio', '1974-11-11', 'Amerika'),
+(3, 'Tim Robbins', '1958-10-16', 'Amerika'),
+(4, 'Christian Bale', '1974-01-30', 'İngiltere'),
+(5, 'Matt Damon', '1970-10-08', 'Amerika'),
+(6, 'John Travolta', '1954-02-18', 'Amerika'),
+(7, 'Marlon Brando', '1924-04-03', 'Amerika'),
+(8, 'Jessica Alba', '1981-04-28', 'Amerika'),
+(9, 'Edward Norton', '1969-08-18', 'Amerika'),
+(10,'Tom Hanks', '1956-07-09', 'Amerika');
+
+
+INSERT INTO FilmOyuncuIliskisi (FilmOyuncuID,FilmID, OyuncuID) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 4),
+(6, 6, 6),
+(7, 7, 7),
+(8, 8, 4),
+(9, 9, 9),
+(10,10, 10);
+
+INSERT INTO Kullanicilar (KullaniciID,KullaniciAdi, Eposta, Sifre) VALUES
+(1, 'Ahmet', 'ahmet@example.com', '123456'),
+(2, 'Mehmet', 'mehmet@example.com', 'password'),
+(3, 'Ayşe', 'ayse@example.com', 'qwerty'),
+(4, 'Fatma', 'fatma@example.com', 'password123'),
+(5, 'Mustafa', 'mustafa@example.com', 'abc123'),
+(6, 'Şevval', 'sevval@example.com', 'test123'),
+(7, 'Emre', 'emre@example.com', 'password'),
+(8, 'Deniz', 'deniz@example.com', 'qwerty123'),
+(9, 'Zeynep', 'zeynep@example.com', '123abc'),
+(10,'Cem', 'cem@example.com', 'passwordabc');
+
+INSERT INTO Begeniler (BegeniID,KullaniciID, FilmID) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5),
+(6, 6, 6),
+(7, 7, 7),
+(8, 8, 8),
+(9, 9, 9),
+(10,10, 10);
+
+INSERT INTO Yorumlar (YorumID, KullaniciID, FilmID, YorumMetni, YorumTarihi) VALUES
+(1, 1, 1, 'Harika bir film!', '2024-03-28'),
+(2, 2, 2, 'Çok etkileyiciydi.', '2024-03-27'),
+(3, 3, 3, 'En sevdiğim film!', '2024-03-26'),
+(4, 4, 4, 'Batman serisinin en iyisi!', '2024-03-25'),
+(5, 5, 5, 'Zihni büken bir film.', '2024-03-24'),
+(6, 6, 6, 'Efsane bir film!', '2024-03-23'),
+(7, 7, 7, 'Klasikler arasında!', '2024-03-22'),
+(8, 8, 8, 'Büyüleyici bir film.', '2024-03-21'),
+(9, 9, 9, 'Brad Pitt harika oynamış.', '2024-03-20'),
+(10,10, 10, 'Tom Hanks yine harikaydı.', '2024-03-19');
+
+
