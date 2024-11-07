@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemek Çeşitleri</title>
+    <style>
+        /* Temel sayfa stilini tanımlama */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Başlık stilini tanımlama */
+        h1 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding: 20px;
+        }
+		h1::first-letter {
+			color:blue;
+			font-size: xx-large;
+		}
+		
+	
+		h2::first-letter {
+			color:red;
+			font-size: xx-large;
+		}
+        /* Yemek listesi için stil */
+        ul {
+            list-style-type: disc;
+        }
+
+        /* Yemek kategorileri için stil */
+        .category1 {
+            background-color: yellow;
+            padding: 20px;
+            margin: 10px;
+        }
+		.category2 {
+            background-color: pink;
+            padding: 20px;
+            margin: 10px;
+        }
+		.category3 {
+            background-color: green;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Yemek ismi için stil */
+        .meal {
+            font-weight: bold;
+        }
+
+        /* Span öğesi için stil */
+        span {
+            border: 3px dashed #333;
+            padding: 5px;
+			border-bottom-color: orange;
+			border-top-color: yellow;
+			border-left-color: blue;
+			border-right-color: green;
+        }
+		/* Metin seçildiğinde stil */
+        ::selection {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yemek Çeşitleri</h1>
+    <ol>
+		<li>
+			<div class="category1">
+				<h2>Çorbalar</h2>
+				<ul>
+					<li><span>Domates Çorbası</span> - Ev yapımı lezzet</li><br><br>
+					<li><span>Mercimek Çorbası</span> - Kış aylarının vazgeçilmezi</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<div class="category2">
+				<h2>Ana Yemekler</h2>
+				<ul>
+					<li><span>Izgara Tavuk</span> - Sağlıklı protein kaynağı</li><br><br>
+					<li><span>Sebzeli Makarna</span> - Vejetaryen seçenek</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<div class="category3">
+				<h2>Tatlılar</h2>
+				<ul>
+					<li><span>Çikolatalı Pasta</span> - Tatlı krizleri için mükemmel</li><br><br>
+					<li><span>Meyve Salatası</span> - Hafif bir tatlı alternatifi</li>
+				</ul>
+			</div>
+		</li>
+	</ol>
+</body>
+</html>

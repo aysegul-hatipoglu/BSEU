@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Türleri</title>
+    <style>
+        /* Temel sayfa stilini tanımlama */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Başlık stilini tanımlama */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding: 20px;
+            background-color: #a9cce3;
+        }
+        h1::first-letter {
+            color: #2980b9;
+            font-size: xx-large;
+        }
+
+        h2::first-letter {
+            color: #e74c3c;
+            font-size: xx-large;
+        }
+
+        /* Kitap listesi için stil */
+        ul {
+            list-style-type: disc;
+        }
+
+        /* Kitap kategorileri için stil */
+        .category1 {
+            background-color: #fce4ec;
+            padding: 20px;
+            margin: 10px;
+            border-left: 5px solid #e91e63;
+        }
+        .category2 {
+            background-color: #e8f5e9;
+            padding: 20px;
+            margin: 10px;
+           
+        }
+        .category3 {
+            background-color: #fff3e0;
+            padding: 20px;
+            margin: 10px;
+            border-left: 5px solid #ff9800;
+        }
+
+        /* Kitap ismi için stil */
+        .book {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        /* Span öğesi için stil */
+        span {
+            border: 3px dashed #2c3e50;
+            padding: 5px;
+            background-color: #ffffff;
+            color: #2c3e50;
+            border-radius: 5px;
+            border-bottom-color: #3498db;
+            border-top-color: #1abc9c;
+            border-left-color: #9b59b6;
+            border-right-color: #e74c3c;
+        }
+
+        /* Metin seçildiğinde stil */
+        ::selection {
+            background: #3498db;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kitap Türleri</h1>
+    <ol>
+        <li>
+            <div class="category1">
+                <h2>Romanlar</h2>
+                <ul>
+                    <li><span>Sefiller</span> - Victor Hugo'nun unutulmaz eseri</li><br><br>
+                    <li><span>Savaş ve Barış</span> - Tolstoy'un başyapıtı</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="category2">
+                <h2>Bilim Kurgu</h2>
+                <ul>
+                    <li><span>1984</span> - George Orwell'den distopik bir klasik</li><br><br>
+                    <li><span>Dune</span> - Frank Herbert'ten epik bir macera</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="category3">
+                <h2>Motivasyon ve Kişisel Gelişim</h2>
+                <ul>
+                    <li><span>Alışkanlıkların Gücü</span> - Charles Duhigg'in etkileyici eseri</li><br><br>
+                    <li><span>İçindeki Devi Uyandır</span> - Tony Robbins'ten ilham verici bir rehber</li>
+                </ul>
+            </div>
+        </li>
+    </ol>
+</body>
+</html>
