@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+	<script>
+	<!-- 1. Soru: Kullanıcıdan yaşını girmesini isteyin. Eğer yaş 18 veya daha büyükse "Ehliyet alabilirsiniz!" mesajını, küçükse "Ehliyet almak için çok gençsiniz!" mesajını ekrana yazdırın. -->
+        let yas = parseInt(prompt("Yaşınızı girin:"));
+
+		if (yas >= 18) {
+			alert("Ehliyet alabilirsiniz!");
+		} else {
+			alert("Ehliyet almak için çok gençsiniz!");
+		}
+		
+	<!-- 2. Soru: Kullanıcıdan bir kelime alın ve bu kelimenin uzunluğunu hesaplayan bir fonksiyon yazın. Kelimenin uzunluğunu ekrana yazdırın. -->
+		function kelimeUzunlugu(kelime) {
+			alert(`Girdiğiniz kelimenin uzunluğu: ${kelime.length}`);
+		}
+
+		// Kullanıcıdan giriş alalım
+		let kullaniciKelimesi = prompt("Bir kelime girin:");
+
+		// Fonksiyonu çalıştır
+		kelimeUzunlugu(kullaniciKelimesi);
+
+	
+	<!-- 3. Soru: Kullanıcıdan bir kelime alın ve bu kelimenin tamamını büyük harflerle ekrana yazdıran bir fonksiyon yazın. -->
+		function buyukHarfeCevir(kelime) {
+			alert(`Büyük harflerle yazılmış hali: ${kelime.toUpperCase()}`);
+		}
+
+		// Kullanıcıdan giriş alalım
+		let kullaniciKelimesi2 = prompt("Büyük harfe çevirmek için bir kelime girin:");
+
+		// Fonksiyonu çalıştır
+		buyukHarfeCevir(kullaniciKelimesi2);
+
+	
+	</script>
+</body>
+</html>

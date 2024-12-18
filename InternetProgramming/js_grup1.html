@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+	<script>
+	<!-- 1. Soru: Kullanıcıdan iki sayı alıp, bu sayıların toplamını, farkını, çarpımını ve bölümünü ekranda gösteren bir program yazın. -->
+        let sayi1 = parseFloat(prompt("Birinci sayıyı girin:"));
+		let sayi2 = parseFloat(prompt("İkinci sayıyı girin:"));
+
+		let toplam = sayi1 + sayi2;
+		let fark = sayi1 - sayi2;
+		let carpim = sayi1 * sayi2;
+		let bolum = sayi1 / sayi2;
+
+		alert(`Toplam: ${toplam}\nFark: ${fark}\nÇarpım: ${carpim}\nBölüm: ${bolum}`);
+		
+		
+	<!-- 2. Soru: Girilen bir kelimeyi istenen sayı kadar ekrana yazdıran fonksiyonu yazın ve çalıştırın -->
+		function ismiYazdir(isim, tekrarSayisi) {
+			let mesaj = "";
+			for (let i = 0; i < tekrarSayisi; i++) {
+				mesaj += isim + "\n";
+			}
+			alert(mesaj);
+		}
+
+		// Kullanıcıdan giriş alalım
+		let kullaniciIsmi = prompt("Bir isim girin:");
+		let tekrar = parseInt(prompt("Kaç kez yazdırmak istiyorsunuz?"));
+
+		// Fonksiyonu çalıştır
+		ismiYazdir(kullaniciIsmi, tekrar);
+
+	
+	<!-- 3. Soru: Kullanıcıdan bir kelime alın ve bu kelimenin ilk harfini ekrana yazdıran bir fonksiyon yazın. -->
+		function ilkHarf(kelime) {
+			alert(`Girdiğiniz kelimenin ilk harfi: ${kelime[0]}`);
+		}
+
+		// Kullanıcıdan giriş alalım
+		let kullaniciKelimesi = prompt("ilk harfini hesaplamak icin bir kelime bir kelime girin:");
+
+		// Fonksiyonu çalıştır
+		ilkHarf(kullaniciKelimesi);
+
+    </script>
+</body>
+</html>

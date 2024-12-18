@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+	<script>
+	<!-- 1. Soru: Kullanıcıdan bir sayı alın ve bu sayının çift mi yoksa tek mi olduğunu belirleyen bir program yazın. Eğer sayı pozitif bir sayıysa "Bu bir pozitif [Çift/Tek] sayıdır." şeklinde bir mesaj, negatifse "Bu bir negatif [Çift/Tek] sayıdır." mesajını ekrana yazdırın. -->
+        let sayi = parseInt(prompt("Bir sayı girin:"));
+
+		if (sayi > 0) {
+			if (sayi % 2 === 0) {
+				alert("Bu bir pozitif çift sayıdır.");
+			} else {
+				alert("Bu bir pozitif tek sayıdır.");
+			}
+		} else if (sayi < 0) {
+			if (sayi % 2 === 0) {
+				alert("Bu bir negatif çift sayıdır.");
+			} else {
+				alert("Bu bir negatif tek sayıdır.");
+			}
+		} else {
+			alert("Sayı sıfırdır ve ne pozitif ne de negatiftir.");
+		}
+
+		
+		
+	<!-- 2. Soru: Bir fonksiyon yazın ve bu fonksiyon, verilen bir sayının karesini döndürsün. Kullanıcıdan bir sayı alın ve sonucu ekrana yazdırın. -->
+	function karesi(sayi) {
+		return sayi * sayi;
+	}
+
+	let kullaniciSayisi = parseInt(prompt("Karesini hesaplamak için bir sayı girin:"));
+	alert("Sayının karesi: " + karesi(kullaniciSayisi));
+
+	
+	<!-- 3. Soru: Kullanıcıdan bir kelime alın ve bu kelimenin son harfini ekrana yazdıran bir fonksiyon yazın. -->
+	
+	function sonHarf(kelime) {
+		alert(`Girdiğiniz kelimenin son harfi: ${kelime[kelime.length - 1]}`);
+	}
+
+	// Kullanıcıdan giriş alalım
+	let kullaniciKelimesi = prompt("Son harfini bulmak için bir kelime girin:");
+
+	// Fonksiyonu çalıştır
+	sonHarf(kullaniciKelimesi);
+
+    </script>
+</body>
+</html>
